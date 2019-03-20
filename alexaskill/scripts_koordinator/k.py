@@ -11,8 +11,8 @@ import sys
 import json
 import uuid
 from enum import Enum
-from alexaskill.scripts_koor import enums
-from alexaskill.scripts_koor import k
+from alexaskill.scripts_koordinator import enums
+from alexaskill.scripts_koordinator import k
 
 #-------------------------------------------------------------------------------
 # FIXME: One-Line Constructors: avoid a lot of boilerplate assignments when

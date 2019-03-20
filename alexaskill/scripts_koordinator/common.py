@@ -10,9 +10,9 @@ do it.  """
 
 import os
 import json
-from alexaskill.scripts_koor.BearerAuth import HTTPBearerAuth
+from alexaskill.scripts_koordinator.BearerAuth import HTTPBearerAuth
 import requests
-from alexaskill.scripts_koor import k
+from alexaskill.scripts_koordinator import k
 
 #-------------------------------------------------------------------------------
 # Gloabl settings

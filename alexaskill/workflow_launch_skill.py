@@ -4,7 +4,7 @@
 import logging
 import os
 
-from alexaskill.scripts_koor.cc_scenario import start_workflow, start_workflow_in_azure
+from alexaskill.scripts_koordinator.cc_scenario import start_workflow, start_workflow_in_azure
 
 from alexaskill.json_request_handler import create_json_request
 

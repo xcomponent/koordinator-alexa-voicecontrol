@@ -10,8 +10,8 @@ import tzlocal
 
 from alexaskill.json_handles import save_json, read_json
 
-from alexaskill.scripts_koor.cc_scenario import check_manual_task_notification
-from alexaskill.scripts_koor.cc_scenario import complete_manual_task, error_manual_task
+from alexaskill.scripts_koordinator.cc_scenario import check_manual_task_notification
+from alexaskill.scripts_koordinator.cc_scenario import complete_manual_task, error_manual_task
 from alexaskill.levenshtein_distance import levenshtein_distance
 from alexaskill.json_request_handler import create_json_request
 

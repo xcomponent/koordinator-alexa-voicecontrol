@@ -11,10 +11,10 @@ import sys
 import time
 import json
 import uuid
-from alexaskill.scripts_koor import cc_common
-from alexaskill.scripts_koor import cc_polling
-from alexaskill.scripts_koor import post
-from alexaskill.scripts_koor import k
+from alexaskill.scripts_koordinator import cc_common
+from alexaskill.scripts_koordinator import cc_polling
+from alexaskill.scripts_koordinator import post
+from alexaskill.scripts_koordinator import k
 
 # -----------------------------------------------------------------------------
 # I want stdout to be unbuffered, always

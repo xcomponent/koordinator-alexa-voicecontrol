@@ -11,9 +11,9 @@ so the clients never have to do it.
 
 import time
 import json
-from alexaskill.scripts_koor import cc_common
-from alexaskill.scripts_koor import post
-from alexaskill.scripts_koor import k
+from alexaskill.scripts_koordinator import cc_common
+from alexaskill.scripts_koordinator import post
+from alexaskill.scripts_koordinator import k
 
 #-------------------------------------------------------------------------------
 # Build URL

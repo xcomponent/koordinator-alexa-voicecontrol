@@ -11,8 +11,8 @@ do it.  """
 import sys
 import json
 import requests
-from alexaskill.scripts_koor import common
-from alexaskill.scripts_koor import k
+from alexaskill.scripts_koordinator import common
+from alexaskill.scripts_koordinator import k
 
 # -----------------------------------------------------------------------------
 # I want stdout to be unbuffered, always

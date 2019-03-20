@@ -2,15 +2,13 @@
 
 This module creates 3 skills connected to Alexa and XComponent Koordinator. XComponent Koordinator is a web 
 plateform which enables iterative creation of scenarios by business lines, ensures access to data and allows business
-lines to produce their result without turning to it personnel. 
-For more information about our XComponent plateform, you can see [link](https://www.xcomponent.com/en/)
+lines to produce their result without turning to IT personnel. 
+For more information about our XComponent plateform, you can see [this link](https://www.xcomponent.com/en/)
 
 The implemented skills in this module allow user to interact with our Koordinator plateform by voice command. These skills are:
 - Koordinator: start workflow
 - Suivi Koordinator: follow workflow progress
 - Notification Koordinator: ask for manual task notifications and control them by validating or cancelling tasks
-
-XComponent Koordinator 
 
 ## Development
 

@@ -4,7 +4,7 @@
 import logging
 import os
 
-from alexaskill.scripts_koor.cc_scenario import start_workflow_in_azure, scenario_status
+from alexaskill.scripts_koordinator.cc_scenario import start_workflow_in_azure, scenario_status
 
 from dateutil import parser
 from datetime import datetime

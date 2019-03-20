@@ -16,12 +16,12 @@ import time
 import json
 import uuid
 import requests
-from alexaskill.scripts_koor import common
-from alexaskill.scripts_koor import cc_common
-from alexaskill.scripts_koor import cc_polling
-from alexaskill.scripts_koor import cc_monitoring
-from alexaskill.scripts_koor import post
-from alexaskill.scripts_koor import k
+from alexaskill.scripts_koordinator import common
+from alexaskill.scripts_koordinator import cc_common
+from alexaskill.scripts_koordinator import cc_polling
+from alexaskill.scripts_koordinator import cc_monitoring
+from alexaskill.scripts_koordinator import post
+from alexaskill.scripts_koordinator import k
 from alexaskill.levenshtein_distance import levenshtein_distance, common_characters
 
 # -----------------------------------------------------------------------------
@@ -77,7 +77,7 @@ def scen_get_id_version(name):
 
     # Cancelled has two query parameters
     query_params = dict(
-        workspaceName='DefaultWorkspace',
+        workspaceName='BusinessAnalysts',
         returnAllWorkflowDefinitionVersions='false',
     )
 
@@ -107,7 +107,7 @@ def scen_get_id_version_using_levenshtein(name, url):
 
     # Cancelled has two query parameters
     query_params = dict(
-        workspaceName='DefaultWorkspace',
+        workspaceName='BusinessAnalysts',
         returnAllWorkflowDefinitionVersions='false',
     )
 
@@ -149,7 +149,7 @@ def scen_get_id_version_using_levenshtein(name, url):
 
 def extract_correct_workflow_name(name, url):
     query_params = dict(
-        workspaceName='DefaultWorkspace',
+        workspaceName='BusinessAnalysts',
         returnAllWorkflowDefinitionVersions='false',
     )
 
@@ -319,7 +319,7 @@ def create_simple_scenario(task_data):
         str(uuid.uuid4()),
         'Zero scenario (generated)',
         'CommandCenter',
-        'DefaultWorkspace',
+        'BusinessAnalysts',
         0,
         tasks=task_defs,
         #versionNumber=1,
@@ -445,7 +445,7 @@ def scenario_status(wkf_name):
 
 def running_scenario(workflow_name, url):
     running_query_params = dict(
-        workspaceName='DefaultWorkspace',
+        workspaceName='BusinessAnalysts',
         workflowInstanceName=workflow_name,
         workflowInstanceStatus='Running'
     )
@@ -471,7 +471,7 @@ def running_scenario(workflow_name, url):
 
 def finished_workflow(workflow_name, url):
     error_query_params = dict(
-        workspaceName='DefaultWorkspace',
+        workspaceName='BusinessAnalysts',
         workflowInstanceName=workflow_name,
         workflowInstanceStatus='Finished'
     )
@@ -505,7 +505,8 @@ def check_manual_task_notification():
     task_notification_url_azure = "http://koordinatorsalon.francecentral.cloudapp.azure.com:8080/pollingservice/api/namespaces/POPUP_USER/task-instances"
 
     query_params = dict(
-        catalogTaskDefinitionNamespace='POPUP_USER'
+        catalogTaskDefinitionNamespace='POPUP_USER',
+        workspaces=['BusinessAnalysts']
     )
 
     # response = requests.get(task_notification_url, auth=common.auth, params=query_params)
@@ -516,7 +517,7 @@ def check_manual_task_notification():
         data = response.json()
         print("notifications: ", data)
         if data == []:
-            return {}, {}
+            return {}, []
         today_data =[]
         task_notifications = {}
         for notification in data:

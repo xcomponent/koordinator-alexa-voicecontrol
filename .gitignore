@@ -1,7 +1,4 @@
 __pycache__/
 .idea
-**/generated/*.json
-**/ssl/*.pem
-alexaskill/scripts/config/configuration.cnf
 
 flake8.out
