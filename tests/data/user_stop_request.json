@@ -1,0 +1,11 @@
+{
+	"stream": "amzn1.ask.deviceIdTest",
+	"user_id": "amzn1.ask.account.userIdTest",
+	"language": "fr",
+	"attributes": {
+		"alexa_skillId": "amzn1.ask.skillIdTest",
+		"alexa_sessionId": "amzn1.echo-api.sessionIdTest",
+		"alexa_requestId": "amzn1.echo-api.request.requestIdTest"
+		},
+	"event": "STOP"
+}

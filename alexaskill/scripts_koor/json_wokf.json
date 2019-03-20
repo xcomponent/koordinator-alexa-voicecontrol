@@ -1,0 +1,307 @@
+[
+  {
+    "workflowDefinition": {
+      "id": "23e69d30-3468-11e9-84e3-e1a7e314c8f8",
+      "name": "TestScénario",
+      "type": "CommandCenter",
+      "tasks": [
+        {
+          "type": "Fork",
+          "catalogTaskDefinitionVersion": 0,
+          "id": "e924fea7-4e32-4e37-a884-4fe62320e620",
+          "maxRetriesOnError": 0,
+          "subTasks": [
+            {
+              "type": "Sequence",
+              "catalogTaskDefinitionVersion": 0,
+              "id": "5b10f59d-73a1-423e-8e8c-7d4ea6fedd76",
+              "maxRetriesOnError": 0,
+              "subTasks": [
+                {
+                  "type": "Worker",
+                  "catalogTaskDefinitionNamespace": "POPUP_USER",
+                  "catalogTaskDefinitionVersion": 0,
+                  "id": "807680d6-628b-4346-b0e9-3b5538127c7f",
+                  "description": "FirstTask",
+                  "inputData": {
+                    "description": "vérification paiement",
+                    "taskName": "firrstTask",
+                    "scenarioInstanceName": "[WorkflowInstance.Name]"
+                  },
+                  "maxRetriesOnError": 0
+                },
+                {
+                  "type": "Worker",
+                  "catalogTaskDefinitionNamespace": "POPUP_USER",
+                  "catalogTaskDefinitionVersion": 0,
+                  "id": "083657b1-aacc-413e-9d5d-60afa3ca5342",
+                  "description": "SecondTask",
+                  "inputData": {
+                    "description": "confirmation paiement",
+                    "taskName": "second task",
+                    "scenarioInstanceName": "[WorkflowInstance.Name]"
+                  },
+                  "maxRetriesOnError": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "inputData": {},
+      "live": true,
+      "timeoutInMillis": 0,
+      "workspaceName": "DefaultWorkspace",
+      "description": "",
+      "isDeleted": false,
+      "schemaVersion": 0,
+      "versionNumber": 1,
+      "versionUserName": "admin",
+      "versionTimeStamp": "2019-02-20T13:14:03.0124620Z",
+      "creationUserName": "admin",
+      "creationTimeStamp": "2019-02-19T17:03:22.3170880Z",
+      "requestId": "8043c539-9df8-4d68-96e6-9f02ea309999"
+    },
+    "id": "299a293e-7734-42e5-9bdc-35220395d3d7",
+    "name": "TestScénario",
+    "userName": "admin",
+    "resumeCount": 0,
+    "inputData": {},
+    "tasksInputData": {},
+    "tasksPreviousOutputData": {},
+    "terminationStatus": "Completed",
+    "timeoutInMillis": 0,
+    "startDate": "2019-02-20T13:14:14.2341740Z",
+    "endDate": "2019-02-20T13:14:29.5573290Z",
+    "status": "Finished",
+    "doneTasks": [
+      {
+        "type": "Worker",
+        "catalogTaskDefinitionNamespace": "POPUP_USER",
+        "catalogTaskDefinitionVersion": 0,
+        "id": "807680d6-628b-4346-b0e9-3b5538127c7f",
+        "description": "FirstTask",
+        "inputData": {
+          "description": "vérification paiement",
+          "taskName": "firrstTask",
+          "scenarioInstanceName": "[WorkflowInstance.Name]"
+        },
+        "maxRetriesOnError": 0
+      },
+      {
+        "type": "Worker",
+        "catalogTaskDefinitionNamespace": "POPUP_USER",
+        "catalogTaskDefinitionVersion": 0,
+        "id": "083657b1-aacc-413e-9d5d-60afa3ca5342",
+        "description": "SecondTask",
+        "inputData": {
+          "description": "confirmation paiement",
+          "taskName": "second task",
+          "scenarioInstanceName": "[WorkflowInstance.Name]"
+        },
+        "maxRetriesOnError": 0
+      }
+    ],
+    "runningTasks": [],
+    "errorTasks": [],
+    "invariants": {},
+    "taskDefinitionRetryCount": {},
+    "workspaceName": "DefaultWorkspace",
+    "errorMessages": [],
+    "requestId": "4fb4f634-8b6d-4119-bced-352994be4071"
+  },
+  {
+    "workflowDefinition": {
+      "id": "23e69d30-3468-11e9-84e3-e1a7e314c8f8",
+      "name": "TestScénario",
+      "type": "CommandCenter",
+      "tasks": [
+        {
+          "type": "Fork",
+          "catalogTaskDefinitionVersion": 0,
+          "id": "e924fea7-4e32-4e37-a884-4fe62320e620",
+          "maxRetriesOnError": 0,
+          "subTasks": [
+            {
+              "type": "Sequence",
+              "catalogTaskDefinitionVersion": 0,
+              "id": "5b10f59d-73a1-423e-8e8c-7d4ea6fedd76",
+              "maxRetriesOnError": 0,
+              "subTasks": [
+                {
+                  "type": "Worker",
+                  "catalogTaskDefinitionNamespace": "POPUP_USER",
+                  "catalogTaskDefinitionVersion": 0,
+                  "id": "807680d6-628b-4346-b0e9-3b5538127c7f",
+                  "description": "FirstTask",
+                  "inputData": {
+                    "description": "vérification paiement",
+                    "taskName": "firrstTask",
+                    "scenarioInstanceName": "[WorkflowInstance.Name]"
+                  },
+                  "maxRetriesOnError": 0
+                },
+                {
+                  "type": "Worker",
+                  "catalogTaskDefinitionNamespace": "POPUP_USER",
+                  "catalogTaskDefinitionVersion": 0,
+                  "id": "083657b1-aacc-413e-9d5d-60afa3ca5342",
+                  "description": "SecondTask",
+                  "inputData": {
+                    "description": "confirmation paiement",
+                    "taskName": "second task",
+                    "scenarioInstanceName": "[WorkflowInstance.Name]"
+                  },
+                  "maxRetriesOnError": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "inputData": {},
+      "live": true,
+      "timeoutInMillis": 0,
+      "workspaceName": "DefaultWorkspace",
+      "description": "",
+      "isDeleted": false,
+      "schemaVersion": 0,
+      "versionNumber": 1,
+      "versionUserName": "admin",
+      "versionTimeStamp": "2019-02-20T13:14:03.0124620Z",
+      "creationUserName": "admin",
+      "creationTimeStamp": "2019-02-19T17:03:22.3170880Z",
+      "requestId": "8043c539-9df8-4d68-96e6-9f02ea309999"
+    },
+    "id": "a144221b-c57c-40bb-af2e-a72c01b30908",
+    "name": "TestScénario",
+    "userName": "admin",
+    "resumeCount": 0,
+    "inputData": {},
+    "tasksInputData": {},
+    "tasksPreviousOutputData": {},
+    "terminationStatus": "Error",
+    "timeoutInMillis": 0,
+    "startDate": "2019-02-20T15:25:11.0236680Z",
+    "endDate": "2019-02-21T09:22:29.9343420Z",
+    "status": "Finished",
+    "doneTasks": [],
+    "runningTasks": [],
+    "errorTasks": [
+      {
+        "type": "Worker",
+        "catalogTaskDefinitionNamespace": "POPUP_USER",
+        "catalogTaskDefinitionVersion": 0,
+        "id": "807680d6-628b-4346-b0e9-3b5538127c7f",
+        "description": "FirstTask",
+        "inputData": {
+          "description": "vérification paiement",
+          "taskName": "firrstTask",
+          "scenarioInstanceName": "[WorkflowInstance.Name]"
+        },
+        "maxRetriesOnError": 0
+      }
+    ],
+    "invariants": {},
+    "taskDefinitionRetryCount": {},
+    "workspaceName": "DefaultWorkspace",
+    "errorMessages": [],
+    "requestId": "8f49452d-2cb5-4e32-927d-77ce3a92e7a2"
+  },
+  {
+    "workflowDefinition": {
+      "id": "23e69d30-3468-11e9-84e3-e1a7e314c8f8",
+      "name": "TestScénario",
+      "type": "CommandCenter",
+      "tasks": [
+        {
+          "type": "Fork",
+          "catalogTaskDefinitionVersion": 0,
+          "id": "e924fea7-4e32-4e37-a884-4fe62320e620",
+          "maxRetriesOnError": 0,
+          "subTasks": [
+            {
+              "type": "Sequence",
+              "catalogTaskDefinitionVersion": 0,
+              "id": "5b10f59d-73a1-423e-8e8c-7d4ea6fedd76",
+              "maxRetriesOnError": 0,
+              "subTasks": [
+                {
+                  "type": "Worker",
+                  "catalogTaskDefinitionNamespace": "POPUP_USER",
+                  "catalogTaskDefinitionVersion": 0,
+                  "id": "807680d6-628b-4346-b0e9-3b5538127c7f",
+                  "description": "FirstTask",
+                  "inputData": {
+                    "description": "vérification paiement",
+                    "taskName": "firrstTask",
+                    "scenarioInstanceName": "[WorkflowInstance.Name]"
+                  },
+                  "maxRetriesOnError": 0
+                },
+                {
+                  "type": "Worker",
+                  "catalogTaskDefinitionNamespace": "POPUP_USER",
+                  "catalogTaskDefinitionVersion": 0,
+                  "id": "083657b1-aacc-413e-9d5d-60afa3ca5342",
+                  "description": "SecondTask",
+                  "inputData": {
+                    "description": "confirmation paiement",
+                    "taskName": "second task",
+                    "scenarioInstanceName": "[WorkflowInstance.Name]"
+                  },
+                  "maxRetriesOnError": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "inputData": {},
+      "live": true,
+      "timeoutInMillis": 0,
+      "workspaceName": "DefaultWorkspace",
+      "description": "",
+      "isDeleted": false,
+      "schemaVersion": 0,
+      "versionNumber": 1,
+      "versionUserName": "admin",
+      "versionTimeStamp": "2019-02-20T13:14:03.0124620Z",
+      "creationUserName": "admin",
+      "creationTimeStamp": "2019-02-19T17:03:22.3170880Z",
+      "requestId": "8043c539-9df8-4d68-96e6-9f02ea309999"
+    },
+    "id": "8f0f5008-582e-410f-a784-3aaabde50b10",
+    "name": "TestScénario",
+    "userName": "admin",
+    "resumeCount": 0,
+    "inputData": {},
+    "tasksInputData": {},
+    "tasksPreviousOutputData": {},
+    "timeoutInMillis": 0,
+    "startDate": "2019-02-21T09:54:49.0617900Z",
+    "status": "Running",
+    "doneTasks": [],
+    "runningTasks": [
+      {
+        "type": "Worker",
+        "catalogTaskDefinitionNamespace": "POPUP_USER",
+        "catalogTaskDefinitionVersion": 0,
+        "id": "807680d6-628b-4346-b0e9-3b5538127c7f",
+        "description": "FirstTask",
+        "inputData": {
+          "description": "vérification paiement",
+          "taskName": "firrstTask",
+          "scenarioInstanceName": "[WorkflowInstance.Name]"
+        },
+        "maxRetriesOnError": 0
+      }
+    ],
+    "errorTasks": [],
+    "invariants": {},
+    "taskDefinitionRetryCount": {},
+    "workspaceName": "DefaultWorkspace",
+    "errorMessages": [],
+    "requestId": "5a277717-0c47-4904-8a19-d15b7a9b36db"
+  }
+]
