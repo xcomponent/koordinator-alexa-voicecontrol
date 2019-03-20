@@ -1,0 +1,6 @@
+echo Running lint...
+flake8 scripts > flake8.out
+
+echo Running tests...
+nosetests tests/alexaskill
+IF ERRORLEVEL 1 EXIT /B 1

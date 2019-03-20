@@ -1,0 +1,32 @@
+{
+	"stream": "amzn1.ask.deviceIdTest",
+	"user_id": "amzn1.ask.account.userIdTest",
+	"language": "fr",
+	"attributes": {
+		"alexa_skillId": "amzn1.ask.skillIdTest",
+		"alexa_sessionId": "amzn1.echo-api.sessionIdTest",
+		"alexa_requestId": "amzn1.echo-api.request.requestIdTest"
+		},
+	"intent": {
+            "name": "booking.meeting_room",
+            "entities": [
+                  {
+                        "name": "date",
+                        "value": "2018-10-10"
+                  },
+                  {
+                        "name": "start",
+                        "value": "05:00"
+                  },
+                  {
+                        "name": "end",
+                        "value": "07:00"
+                  },
+                  {
+                        "name": "room",
+                        "value": "grande salle",
+                        "status": "SUCCESS_MATCH"
+                  }
+            ]
+      }
+}
